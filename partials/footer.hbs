@@ -1,0 +1,62 @@
+{{!-- Site footer --}}
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 clearfix">
+        <div class="footer-section">
+          <p class="footer-section-title">{{t "About"}}</p>
+        </div>
+        {{!-- Blog logo or title --}}
+        <a href="{{@site.url}}">
+          {{#if @site.logo}}
+            <img data-src="{{@site.logo}}" alt="{{@site.title}}"
+                 class="lazyload img-responsive footer-logo"/>
+          {{else}}
+            <h3 class="footer-title">{{@site.title}}</h3>
+          {{/if}}
+        </a>
+        {{!-- Blog description --}}
+        <p>{{@site.description}}</p>
+        <hr class="footer-divider">
+        {{!-- Social media links --}}
+        {{>social-media}}
+      </div>
+      <div class="col-md-4 clearfix">
+        <div class="footer-section">
+          <p class="footer-section-title">{{t "Tag cloud"}}</p>
+        </div>
+        {{!-- Tag cloud --}}
+        {{> tag-cloud}}
+      </div>
+      <div class="col-md-4 clearfix">
+        <div class="footer-section">
+          <p class="footer-section-title">{{t "Latest posts"}}</p>
+        </div>
+        {{!-- Show the 2 most recent posts --}}
+        {{#get "posts" include="authors, tags" limit=2 }}
+          {{#foreach posts}}
+          <div class="footer-post clearfix">
+            <a href="{{url}}" class="">
+              <div class="lazyload footer-post__image" data-src="{{img_url feature_image}}"></div>
+            </a>
+            <div class="footer-post__info">
+              <p class="footer-post__title"><a href="{{url}}">{{title}}</a></p>
+              <p class="footer-post__author">{{#primary_author}}<a href="{{url}}">{{name}}</a>{{/primary_author}}</p>
+              <p class="footer-post__date">{{date published_at timeago="true"}}</p>
+            </div>
+          </div>
+          {{^if @last}} <hr class="footer-divider"> {{/if}}
+          {{/foreach}}
+        {{/get}}
+      </div>
+    </div>
+  </div>
+  {{!-- Copyright --}}
+  <div class="footer-bottom">
+    <div class="copyright text-center">
+      &copy; {{date format="YYYY"}} <a href="{{@site.url}}">{{@site.title}}</a>.
+      Published with <a href="https://ghost.org/">Ghost</a>.
+      Theme by <a href="https://bironthemes.com">Biron Themes</a>
+    </div>
+  </div>
+</footer>

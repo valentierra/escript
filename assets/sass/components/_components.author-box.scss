@@ -1,0 +1,47 @@
+//===================================
+// Author box
+//===================================
+
+.author-box {
+  border: 2px solid $color-dark;
+  border-radius: $global-border-radius;
+  padding: $spacing-base;
+  margin: 0 0 $spacing-large;
+
+  @include mq($from: sm) {
+    padding: $spacing-large;
+  }
+
+  .author-box__image {
+    width: 5em;
+    height: 5em;
+    display: inline-block;
+    border-radius: 50%;
+    @include background-cover;
+  }
+
+  .author-box__name {
+    margin-top: 0;
+  }
+
+  .author-link {
+    .author-link__location,
+    .author-link__website,
+    .author-link__facebook,
+    .author-link__twitter {
+      display: inline-block;
+      margin: 0 0.3em;
+      margin-bottom: $spacing-small;
+
+      i { margin-right: 0.2em; }
+    }
+  }
+
+  .row > div {
+    text-align: center;
+
+    @include mq($from: sm) {
+      text-align: left;
+    }
+  }
+}

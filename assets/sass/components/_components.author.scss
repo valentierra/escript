@@ -1,0 +1,178 @@
+//===================================
+// Author page style
+//===================================
+
+.author {
+  min-height: 100vh;
+	height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 8em;
+  background-color: $color-dark;
+	position: relative;
+
+	@include mq($from: sm) {
+		padding-top: 6em;
+	}
+
+  .author__cover {
+	  @include background-cover;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		width: 100%;
+
+		&:after {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(rgba($color-dark, 0.35), rgba($color-dark, 0.85));
+		}
+  }
+
+	.author__profile {
+		margin: 0 auto;
+		padding: $spacing-large;
+		padding-top: 0;
+		position: relative;
+		height: 100%;
+		width: 100%;
+		background-color: rgba($color-dark, 0.6);
+	}
+
+	.author__image {
+		position: absolute;
+		display: block;
+		width: 6em;
+		height: 6em;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		top: -3em;
+		margin: 0 auto;
+		background-size: cover;
+		background-position: center center;
+		border-radius: 100%;
+
+		@include mq($from: md) {
+			width: 8em;
+			height: 8em;
+			top: -4em;
+		}
+	}
+
+	.author__title {
+		padding-top: $spacing-large; 
+		margin-top: 0;
+		font-size: 2rem;
+		text-align: center;
+		color: $color-light;
+
+		@include mq($from: sm) {
+			font-size: 2.5rem;
+		}
+
+		@include mq($from: md) {
+			font-size: 3rem;
+		}
+
+		a {
+			color: $color-dark;
+
+			&:hover {
+				text-decoration: none;
+				border: none;
+			}
+		}
+	}
+
+	.author__bio {
+		max-width: 30em;
+		margin: 0 auto;
+		color: darken($color-light, 20%);
+		font-size: 1rem;
+		letter-spacing: 0;
+		text-indent: 0;
+		text-align: center;
+
+		@include mq($from: sm) {
+			font-size: 1.2rem;
+		}
+	}
+
+	.author-meta {
+		margin: 0;
+		padding: $spacing-small 0;
+		color: darken($color-light, 20%);
+		text-align: center;
+
+		span {
+			display: inline-block;
+			margin: $spacing-small;
+			word-wrap: break-word;
+		}
+
+		a { 
+			text-decoration: none;
+			color: darken($color-light, 20%);
+
+			&:hover { color: $color-link-hover; }
+		}
+
+		.author-meta__location, .author-meta__stats { color: darken($color-light, 20%); }
+	}
+
+	.author__link {
+		a { 
+			color: darken($color-light, 20%); 
+
+			&:hover { color: $color-brand; }
+		}
+	}
+
+	.author-social {
+		margin: 1rem 0rem;
+		text-align: center;
+	}
+
+	.author-social__link {
+		border: 1px solid $color-border;
+		color: darken($color-light, 20%);
+		margin-right: $spacing-tiny;
+		cursor: pointer;
+		display: inline-block;
+		font-weight: 700;
+		padding: 0 $spacing-base;
+		margin-bottom: $spacing-small;
+		height: 2.6em;
+		transition: border-color .4s ease, background .4s ease;
+
+		@include mq($from: sm) {
+			margin-bottom: 0;
+		}
+
+		&:hover {
+			border-color: $color-brand;
+			background: $color-brand;
+			i, p { color: $color-light; }
+		}
+
+		i {
+			float: left;
+			margin-right: 0;
+			margin-top: 0.65em;
+			color: darken($color-light, 20%);
+			transition: color .4s ease;
+		}
+
+		p {
+			display: inline-block;
+			margin-left: $spacing-small;
+    	margin-top: 0.4em;
+			margin-bottom: 0;
+			transition: color .4s ease;
+		}
+	}
+}

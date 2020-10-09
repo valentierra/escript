@@ -1,0 +1,56 @@
+//===================================
+// Input and Buttons
+//===================================
+
+input, textarea, select { 
+  padding: 0 $spacing-small;
+  border-radius: $global-border-radius;
+}
+
+button, .button {
+  color: $color-dark;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-root;
+  transition: color $global-transition, background $global-transition;
+  background: transparent;
+  text-transform: uppercase;
+  display: inline-block;
+  border: 2px solid $color-dark;
+  border-radius: $global-border-radius;
+  padding: $spacing-tiny $spacing-small;
+
+  @include mq($from: sm) {
+    padding: $spacing-small $spacing-base;
+  }
+
+  &.button--light {
+    color: $color-light;
+    border-color: $color-light;
+
+    &:hover {
+      background: $color-light;
+      color: $color-dark;
+    }
+  }
+
+  &:hover {
+  	background: $color-dark;
+  	color: $color-light;
+  }
+
+  &:active, &:focus { outline: none; }
+}
+
+input,
+abbr,
+acronym,
+blockquote,
+code,
+kbd,
+q,
+samp,
+var {
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}

@@ -1,0 +1,81 @@
+//===================================
+// Author page style
+//===================================
+
+.tag-header {
+  min-height: 100vh;
+	height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: $color-dark;
+	position: relative;
+
+	.tag__info {
+		margin: 0 auto;
+		padding: $spacing-large;
+		position: relative;
+		height: 100%;
+		width: 100%;
+		background-color: rgba($color-dark, 0.6);
+	}
+
+	.tag__title {
+		margin-top: 0;
+		font-size: 2rem;
+		text-align: center;
+		color: $color-light;
+
+		@include mq($from: sm) {
+			font-size: 2.5rem;
+		}
+
+		@include mq($from: md) {
+			font-size: 3rem;
+		}
+
+		a {
+			color: $color-dark;
+
+			&:hover {
+				text-decoration: none;
+				border: none;
+			}
+		}
+	}
+
+	.tag__description {
+		max-width: 30em;
+		margin: 0 auto;
+		color: darken($color-light, 20%);
+		font-size: 1rem;
+		letter-spacing: 0;
+		text-indent: 0;
+		text-align: center;
+
+		@include mq($from: sm) {
+			font-size: 1.2rem;
+		}
+	}
+}
+
+.tag-meta {
+	margin: 0;
+	padding: $spacing-small 0;
+	color: darken($color-light, 20%);
+	text-align: center;
+
+	span {
+		display: inline-block;
+		margin: $spacing-small;
+		word-wrap: break-word;
+	}
+
+	a { 
+		text-decoration: none;
+		color: darken($color-light, 20%);
+
+		&:hover { color: $color-link-hover; }
+	}
+
+	.tag-meta__stats { color: darken($color-light, 20%); }
+}

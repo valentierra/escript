@@ -1,0 +1,30 @@
+//===================================
+// Html and body
+//===================================
+
+html, body {
+  color: $color-text;
+  background-color: $color-background;
+  font-size: $font-size-root;
+  font-weight: $font-weight-regular;
+  font-family: $font-family-base;
+  line-height: $line-height-base;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+body { 
+  overflow-x: hidden; 
+}
+
+// Root font size
+:root {
+  font-size: $font-size-root;
+}

@@ -1,0 +1,35 @@
+//===================================
+// Links
+//===================================
+
+a {
+  color: $color-dark;
+  text-decoration: none;
+  transition: color $global-transition;
+
+  &:active, &:focus, &:hover { text-decoration: none; }
+
+  &:hover { color: $color-link-hover; }
+}
+
+.post-content__inner {
+  a {
+    color: $color-link;
+    text-decoration: underline;
+    transition: color $global-transition;
+
+    &:visited { color: $color-link-visited; }
+
+    &:hover {
+      color: $color-link-hover;
+      text-decoration: underline;
+      transition: color $global-transition;
+    }
+
+    &:active { color: $color-link; }
+  }
+}
+
+// .post {
+//   a:hover { text-decoration: none; }
+// }

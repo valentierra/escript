@@ -1,0 +1,82 @@
+//===================================
+// Subscribe
+//===================================
+
+.subscribe {
+  @include background-cover;
+  position: relative;
+  padding: 5em 0;
+  color: $color-light;
+  
+  .subscribe-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: block;
+    background: linear-gradient(160deg,rgba($color-brand, 0.8),rgba($color-dark, 0.5));
+  }
+
+  h3 {
+    color: $color-light;
+    margin-top: 0;
+  }
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  .subscribe-form__input {
+    background-color: transparent;
+    height: 3rem;
+    border: 2px solid $color-light;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+    max-width: 15em;
+    color: $color-light;
+    font-weight: $font-weight-bold;
+
+    @include mq($from: sm) {
+      width: 100%;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .subscribe-form__button {
+    height: 3em;
+    margin-left: -0.3em;
+    padding: $spacing-small $spacing-base;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    
+    i { color: $color-light; }
+
+    &:hover { 
+      i { color: rgba($color-brand, 0.6); }
+    }
+  }
+}
+
+.gh-subscribe {
+  position: relative;
+  z-index: 2;
+
+  .gh-subscribe-rss {
+    margin: $spacing-base 0;
+  
+    a {
+      color: $color-light;
+      font-weight: $font-weight-bold;
+
+      &:hover { color: $color-dark; }
+    }
+  }
+}

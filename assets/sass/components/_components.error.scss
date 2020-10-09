@@ -1,0 +1,34 @@
+//===================================
+// Error 404 style
+//===================================
+
+.error-404 {
+  position: relative;
+  text-align: center;
+  color: $color-light;
+
+  .error-404__title {
+    font-size: 10rem;
+    color: $color-light;
+    margin: 0;
+    line-height: 1;
+  }
+
+  .error-404__text {
+    margin-top: 0;
+    margin-bottom: $spacing-tiny;
+    font-size: 2rem;
+    font-weight: $font-weight-bold;
+  }
+
+  .error-404__description {
+    font-size: 1.2rem;
+    margin: $spacing-tiny 0;
+  }
+
+  .error-404__links {
+    margin: $spacing-large 0;
+
+    a { margin-right: $spacing-small; }
+  }
+}

@@ -1,0 +1,97 @@
+.footer {
+  background-color: rgba($color-dark, 0.8);
+  color: rgba($color-light, 0.8);
+
+  a { color: rgba($color-light, 0.8); }
+
+  .footer-title {
+    color: $color-light;
+    line-height: 1;
+    margin-top: 0;
+  }
+
+  .row { padding:$spacing-large 0; }
+
+  .footer-section {
+    border-bottom: 1px solid #888;
+    margin-bottom: $spacing-base;
+    padding-bottom: $spacing-small;
+  }
+
+  .footer-section-title {
+    margin: 0;
+    font-size: 1.4rem;
+    color: rgba($color-light, 0.8);
+    position: relative;
+    display: inline-block;
+  }
+
+  .footer-bottom {
+    background-color: $color-dark;
+    padding: $spacing-base 0;
+  }
+
+  .footer-post {
+    margin-bottom: $spacing-base;
+
+    .footer-post__image {
+      width: 5em;
+      height: 5em;
+      float: left;
+      background-color: $color-brand;
+      border-radius: $global-border-radius;
+      @include background-cover;
+    }
+
+    .footer-post__info {
+      height: 5em;
+      margin-left: 5.5em;
+
+      .footer-post__author,
+      .footer-post__date {
+        display: inline-block;
+
+        &:last-of-type { border: none; }
+      }
+
+      .footer-post__author:after {
+        padding-left: $spacing-small;
+        padding-right: $spacing-tiny;
+        content: "|";
+      }
+
+      .footer-post__title, 
+      .footer-post__author,
+      .footer-post__date {
+        margin-top: 0;
+        color: rgba($color-light, 0.8);
+        margin-bottom: $spacing-tiny;
+        a {
+          color: rgba($color-light, 0.8);
+
+          &:hover {
+            color: $color-link-hover;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-divider {
+    background-color: rgba($color-light, 0.4);
+  }
+
+  .footer-logo {
+    max-height: 3em;
+  }
+
+  .container .row > div:not(:first-child) {
+    margin-top: $spacing-base;
+  }
+
+  @include mq($from: md) { 
+    .container .row > div:not(:first-child) {
+      margin-top: 0em;
+    }
+  }
+}

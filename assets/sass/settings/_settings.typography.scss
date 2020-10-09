@@ -1,0 +1,31 @@
+//===================================
+// Typography
+//===================================
+
+$font-family-sans-serif:	"Roboto", Tahoma, Arial, sans-serif;
+$font-family-serif:       "Libre Baskerville", Tahoma, Arial, serif;
+$font-family-monospace: 	Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-base:      	$font-family-sans-serif;
+
+$font-size-root: 					1rem !default;
+
+$line-height-base: 				1.6;
+
+$spacing-base:						1em;
+
+$spacing-factor-tiny:     0.25  !default;
+$spacing-factor-small:    0.5   !default;
+$spacing-factor-large:    2     !default;
+$spacing-factor-huge:     4     !default;
+
+$spacing-tiny:            $spacing-base * $spacing-factor-tiny;
+$spacing-small:           $spacing-base * $spacing-factor-small;
+$spacing-large:           $spacing-base * $spacing-factor-large;
+$spacing-huge:            $spacing-base * $spacing-factor-huge;
+
+$font-weight-regular: 		400;
+$font-weight-bold: 				700;
+
+$heading-font-family:    	"Francois One", Tahoma, Arial, sans-serif;
+$heading-font-weight:    	$font-weight-bold;
+$heading-line-height:    	$line-height-base;

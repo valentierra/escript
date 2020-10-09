@@ -1,0 +1,19 @@
+//===================================
+// Page style
+//===================================
+
+.page-template {
+  background-color: $color-light;
+}
+
+.page-header {
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: $color-dark;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: none;
+}

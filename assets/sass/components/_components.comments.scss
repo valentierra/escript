@@ -1,0 +1,14 @@
+//===================================
+// Comments
+//===================================
+
+.comments {
+  .comments__panel {
+    max-width: 46em;
+    padding: $spacing-base;
+
+    @include mq($from: sm) {
+      padding: $spacing-large 0;
+    }
+  }
+}

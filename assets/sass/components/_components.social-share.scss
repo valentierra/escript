@@ -1,0 +1,42 @@
+//===================================
+// Social share
+//===================================
+
+.social-share {
+  display: none;
+
+  @include mq($from: sm) {
+    &.sticky {
+      position: fixed;
+      z-index: 9999;
+      top: 3em;
+    }
+  }
+
+  @include mq($from: sm) {
+    position: absolute;
+    margin-left: -1.2em;
+    padding-top: 1.5em;
+  }
+
+  a, button {
+    width: 2.8em;
+    height: 2.8em;
+    border: 1px solid $color-dark;
+    background-color: $color-light;
+    border-radius: $global-border-radius;
+    transition: color $global-transition, background $global-transition;
+    margin-bottom: $spacing-small;
+
+    @include mq($from: sm) {
+      display: block;
+    }
+
+    &:focus, &:active { outline: none; }
+
+    &:hover {
+      background-color: $color-dark;
+      color: $color-light;
+    }
+  }
+}

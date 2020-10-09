@@ -1,0 +1,55 @@
+//===================================
+// Colors
+//===================================
+
+// Brand color 
+$color-brand:           #F22613; // Pomegranate
+
+// Background color. 
+$color-background:      #f1f1f1;
+
+// Color light. 
+$color-light:           #ffffff;
+
+// Color dark. 
+$color-dark:            #000000;
+
+// Text color
+$color-text: 						#222222;
+
+// Heading text color
+$color-heading-text: 		darken($color-text, 10%);
+
+// Global text link color. 
+$color-link:            $color-brand;
+
+// Link hover color. 
+$color-link-hover:      darken($color-link, 10%);
+
+// Link visited color. 
+$color-link-visited:    darken($color-link, 20%);
+
+// Globar border color 
+$color-border:          #cccccc;
+
+// Social Media colors 
+$behance:               #0077ff;
+$dribbble:              #ea4c89;
+$email:                 #35c7ed;
+$facebook:              #4862a3;
+$google:                #3f85f4;
+$google-plus:           #dd4b39;
+$instagram:             #3d6b92;
+$linkedin:              #0177b5;
+$pinterest:             #db242c;
+$reddit:                #ff4500;
+$rss:                   #fc8f55;
+$skype:                 #00aff0;
+$soundcloud:            #ff4e00;
+$spotify:               #84bd00;
+$stumbleupon:           #ea4b24;
+$trello:                #026aa7;
+$tumblr:                #2c4762;
+$twitter:               #55acee;
+$whatsapp:              #59ac23;
+$youtube:               #d02022;
