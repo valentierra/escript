@@ -69,7 +69,7 @@
     "font-awesome": "^4.7.0",
     "ghost-search": "^1.0.1",
     "jquery": "^3.4.1",
-    "lazysizes": "^4.1.8",
+    "lazysizes": "^5.2.1",
     "moment": "^2.24.0",
     "salvattore": "^1.0.9",
     "vanilla-lazyload": "^8.17.0"
