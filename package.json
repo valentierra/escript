@@ -70,7 +70,7 @@
     "ghost-search": "^1.0.1",
     "jquery": "^3.4.1",
     "lazysizes": "^4.1.8",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "salvattore": "^1.0.9",
     "vanilla-lazyload": "^8.17.0"
   },
